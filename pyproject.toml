@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -15,8 +15,19 @@ dependencies = [
 readme = "README.md"
 
 [tool.setuptools]
-packages = ["gryszka_config_package", "gryszka_config_package.xxx", "gryszka_config_package.yyy", "gryszka_config_package.zzz"]
+packages = [
+    "gryszka_config_package",
+    "gryszka_config_package.xxx",
+    "gryszka_config_package.xxx.rrr",
+    "gryszka_config_package.xxx.rrr.ttt",
+    "gryszka_config_package.yyy",
+    "gryszka_config_package.yyy.ddd",
+    "gryszka_config_package.yyy.ddd.eee",
+    "gryszka_config_package.zzz",
+    "gryszka_config_package.zzz.uuu",
+    "gryszka_config_package.zzz.uuu.ooo",
+]
 include-package-data = true
 
 [tool.setuptools.package-data]
-gryszka_config_package = ["xxx/config.yml"]
+gryszka_config_package = ["xxx/rrr/ttt/config.yml"]

@@ -9,16 +9,16 @@ pip install gryszka-config-package
 ```
 
 ```python
-from gryszka_config_package.yyy.main import get_env_yml_config
+from gryszka_config_package.yyy.ddd.eee.main import get_env_yml_config
 
-print(get_env_yml_config('database2', 'config.yml', 'gryszka_config_package/xxx'))
+print(get_env_yml_config('database2', 'config.yml', 'gryszka_config_package/xxx/rrr/ttt'))
 ```
 
 ```python
-from gryszka_config_package.zzz.read_file import read_yml
+from gryszka_config_package.zzz.uuu.ooo.read_file import read_yml
 
 config_filename = 'config.yml'
-file_directory = 'gryszka_config_package/xxx'
+file_directory = 'gryszka_config_package/xxx/rrr/ttt'
 
 print(read_yml(config_filename, file_directory))
 ```
