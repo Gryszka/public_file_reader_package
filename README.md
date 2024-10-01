@@ -2,7 +2,13 @@
 The package tests , how to read file form a package.
 Tests run with access to the source code or just with the package.
 
-## Installation
+## package build
+```sh
+python3 setup.py sdist
+python3 setup.py bdist_wheel
+```
+
+## Installation 
 
 ```bash
 pip install gryszka-config-package
