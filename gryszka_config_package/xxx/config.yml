@@ -1,0 +1,11 @@
+database1:
+  host: localhost1
+  port: 1111
+  user: admin1
+  password: secret1
+
+database2:
+  host: localhost2
+  port: 2222
+  user: admin2
+  password: secret2
